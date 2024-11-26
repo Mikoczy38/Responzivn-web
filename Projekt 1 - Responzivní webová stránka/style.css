@@ -1,0 +1,399 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+/* NAVIGACE */
+nav {
+  background-color: #33292a;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-evenly;
+  list-style-type: none;
+  width: 70%;
+  margin: 0 auto;
+}
+
+nav ul li {
+  padding-top: 16px;
+  padding-bottom: 16px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+}
+
+nav ul li a {
+}
+
+/* IKONA */
+.icon-menu {
+  width: 30px;
+  height: 25px;
+  display: none;
+  margin-left: auto;
+}
+
+.icon-menu img {
+  width: 100%;
+  height: 100%;
+  padding: 8px;
+}
+
+@media (max-width: 600px) {
+  .icon-menu {
+    display: block;
+  }
+  nav ul {
+    display: none;
+  }
+}
+
+/* SEKCE IMAGE */
+.section-image {
+  height: 100vh;
+  background-image: url(images/scott-goodwill-y8Ngwq34_Ak-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  width: 100%;
+}
+
+.wrapper {
+  width: 70%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.main-title {
+  color: #fff;
+  font-size: 50px;
+  position: absolute;
+  top: 500px;
+  right: 50px;
+  
+}
+
+.main-title h1 {
+ 
+}
+
+.section-image-1 {
+  width: 100%;
+  object-fit: cover;
+  margin-top: 40px;
+}
+
+/* SEKCE ABOUT */
+
+.section-about {
+  margin-top: 40px;
+  margin-bottom: ;
+}
+
+.about-wrapper {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.about-text {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.paragraph {
+  color: black;
+}
+
+.about-image {
+  width: fit-content;
+  margin: 0 auto;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.about-image img {
+  width: 100%;
+  height: 100%;
+}
+
+@media (min-width: 678px) {
+  .about-wrapper {
+    display: flex;
+    gap: 20px;
+  }
+  .about-text {
+    width: 40%;
+  }
+  .about-image {
+    width: 50%;
+  }
+}
+/* SEKCE WHAT WE DO */
+
+.section-what {
+  background-color: #33292a;
+  margin-bottom: 40px;
+  padding-bottom: 40px;
+  padding-top: 40px;
+}
+
+.what-wrapper {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.what-text {
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  text-align: center;
+}
+
+.what-p {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.what-icons {
+  text-align: center;
+}
+
+.icons-wrapper {
+  width: 70%;
+  margin: 0 auto;
+}
+
+@media (min-width: 678px) {
+  .icons-wrapper {
+    height: 150px;
+  }
+}
+
+.icons-container img {
+  width: fit-content;
+  margin: 0 auto;
+}
+
+@media (min-width: 678px) {
+  .icons-container img {
+    text-align: center;
+  }
+}
+
+.hiking,
+.cycle,
+.water,
+.car {
+  padding-bottom: px;
+}
+
+.hiking img,
+.cycle img,
+.water img,
+.car img {
+  width: 50%;
+  margin: 0 auto;
+}
+
+@media (max-width: 678px) {
+  .hiking img,
+  .cycle img,
+  .water img,
+  .car img {
+    width: 30%;
+    margin: 0 auto;
+  }
+}
+
+p {
+  color: #fff;
+}
+
+.icons-container {
+  text-align: center;
+}
+
+@media (min-width: 678px) {
+  .icons-container {
+    display: flex;
+    justify-content: space-evenly;
+  }
+}
+
+.section-pictures-one {
+  padding-bottom: 60px;
+}
+
+.wrapper {
+  width: 70%;
+  margin: 0 auto;
+}
+
+@media (min-width: 687px) {
+  .container {
+    width: fit-content;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 10px;
+    text-align: center;
+  }
+}
+
+.item-one img,
+.item-two img,
+.item-three img,
+.item-four img,
+.item-five img,
+.item-six img,
+.item-seven img,
+.item-eight img,
+.item-nine img {
+  width: 100%;
+  height: 100%;
+}
+
+.box {
+  background-color: rgb(228, 228, 228);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.box p {
+  color: black;
+  text-align: center;
+} 
+
+.section-where-do-you-want-to-go {
+  background-color: #644b4f;
+  padding-bottom: 40px;
+  margin-bottom: 40px;
+  padding-top: 40px;
+}
+
+@media (min-width: 678px) {
+  .where-do-text {
+    display: flex;
+    gap: 30px;
+    flex-grow: 2;
+  }
+  .section-title {
+    flex-grow: 4;
+  }
+}
+
+.section-title {
+  color: #fff;
+  height: 50%;
+}
+
+.section-text-one {
+  color: #fff;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.section-text-two {
+  color: #fff;
+  margin-bottom: 50px;
+}
+
+.contact-us {
+  background-color: gainsboro;
+  color: black;
+  padding: 5px;
+  border-radius: 5px;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+.reviews-wrapper {
+  width: 70%;
+  margin: auto;
+}
+
+.reviews-text-one {
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.reviews-paragraph {
+  color: black;
+}
+
+.reviews-text-two p {
+  color: black;
+}
+
+@media (min-width: 678px) {
+  .reviews-text-two {
+    display: flex;
+    gap: 30px;
+  }
+}
+
+.kalen,
+.jeffrey {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.jeffrey-div,
+.kalen-div {
+  text-align: center;
+}
+
+.section-pictures-two {
+  margin-top: 40px;
+}
+
+.section-pictures-two img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin-top: 0;
+}
+
+.part-picture-four,
+.part-picture-five {
+  display: flex;
+}
+
+@media (max-width: 678px) {
+  .part-picture-four,
+  .part-picture-five {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+footer {
+  background-color: #333;
+  color: #f2f2f2;
+  padding: 20px;
+  text-align: center;
+}
+
+footer a {
+  color: #efa69d;
+}
+
+footer a
+}
